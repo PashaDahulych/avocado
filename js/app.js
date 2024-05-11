@@ -4918,6 +4918,17 @@
     window.onload = function() {
         applyMaskToPhones();
     };
+    window.addEventListener("DOMContentLoaded", (function() {
+        let videos = document.querySelectorAll(".slide-testinations__video");
+        videos.forEach((function(video) {
+            video.addEventListener("click", (function() {
+                if (video.classList.contains("ready")) return;
+                let src = video.dataset.src;
+                video.classList.add("ready");
+                video.insertAdjacentHTML("afterbegin", '<iframe width="560" height="315" src="' + src + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>');
+            }));
+        }));
+    }));
     window["FLS"] = true;
     menuInit();
     spollers();

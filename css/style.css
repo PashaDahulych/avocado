@@ -213,6 +213,9 @@ summary::marker {
   position: relative
 }
 .select__title {
+  border: .125rem solid rgba(38,38,38,.15);
+  border-radius: 62.5rem;
+  padding: .75rem 2rem;
   color: inherit;
   text-align: left;
   cursor: pointer;
@@ -302,11 +305,12 @@ summary::marker {
 }
 .select--show-top .select__options {
   top: auto;
-  bottom: calc(100% - .0625rem);
-  border: 1px solid #d9d9d9;
-  border-bottom: 0;
-  border-radius: 4px 4px 0 0;
-  padding: 5px 0 10px 0
+  bottom: calc(100% + .625rem)
+}
+.select_gender .select__title {
+  border: none;
+  border-radius: 0;
+  padding: 0
 }
 .select_gender .select__option:last-child::before {
   content: "\e910"
@@ -614,7 +618,6 @@ summary::marker {
   line-height: 1.25;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  min-height: 6.5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -1004,6 +1007,7 @@ summary::marker {
 .attention__wrapper {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  padding: 4rem 1rem;
   background-color: rgba(38,38,38,.45);
   transition: all .3s;
   border-radius: 1.25rem
@@ -1847,8 +1851,11 @@ summary::marker {
   border-radius: 1.5625rem;
   overflow: hidden;
   aspect-ratio: 398/550;
-  position: relative
+  position: relative;
+  background: #fff url(../img/button.svg) center/3.625rem no-repeat;
+  cursor: pointer
 }
+.slide-testinations__video iframe,
 .slide-testinations__video video {
   position: absolute;
   width: 100%;
@@ -1925,7 +1932,7 @@ summary::marker {
 }
 .cart__top {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(440px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
   gap: 1rem
 }
 .cart__line {
@@ -1969,7 +1976,7 @@ summary::marker {
 }
 .cart__body {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(440px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
   gap: 2rem 1rem
 }
 .cart__select-wrapper {
@@ -2366,6 +2373,9 @@ summary::marker {
   .cart__form > *:not(:last-child) {
     margin-bottom: 2rem
   }
+  .cart__top {
+    grid-template-columns: repeat(auto-fit,minmax(440px,1fr))
+  }
   .cart__line--tel input {
     padding: 1.0625rem 2rem 1.0625rem 5rem
   }
@@ -2374,6 +2384,9 @@ summary::marker {
   }
   .cart__flag {
     left: 2rem
+  }
+  .cart__body {
+    grid-template-columns: repeat(auto-fit,minmax(440px,1fr))
   }
   .cart__select-wrapper {
     gap: 1rem
@@ -2389,7 +2402,7 @@ summary::marker {
   }
 }
 @media (min-width:61.99875em) {
-  ._select-open .select__title {
+  ._select-open .select_gender .select__title {
     color: #89d628
   }
   .spollers__title {
@@ -2404,6 +2417,9 @@ summary::marker {
   }
   .text {
     font-size: 1.125rem
+  }
+  .header {
+    min-height: 6.5rem
   }
   .header._header-scroll {
     background-color: transparent;
@@ -2738,7 +2754,6 @@ summary::marker {
     content: "";
     position: fixed;
     width: 100%;
-    height: 4.375rem;
     right: -100%;
     top: 0;
     transition: right .3s;
@@ -2865,6 +2880,9 @@ summary::marker {
     gap: .9375rem;
     align-items: center
   }
+  .menu__body::before {
+    min-height: 5.25rem
+  }
   .tabs__navigation {
     overflow-x: auto;
     padding-bottom: .625rem
@@ -2973,6 +2991,14 @@ summary::marker {
   .food__header {
     padding: 0 1rem
   }
+  .food__top {
+    flex: 1 1 100%
+  }
+  .food__lables {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start
+  }
   .food__actions {
     padding: 0 1rem
   }
@@ -3011,6 +3037,9 @@ summary::marker {
   }
   .options__sub-title:not(:last-child) {
     margin-bottom: 1rem
+  }
+  .options__sub-title {
+    padding: 0 1rem
   }
   .options__navigation {
     padding: 0 1rem
@@ -3111,11 +3140,11 @@ summary::marker {
     text-align: center
   }
   .attention__body {
-    align-items: stretch;
+    align-items: flex-start;
     text-align: left
   }
   .attention__label {
-    width: 100%
+    align-self: flex-start
   }
   .why__container {
     padding: 0
