@@ -2732,6 +2732,17 @@ summary::marker {
     gap: .9375rem
   }
 }
+@media (max-width:494px) {
+  .food__small-lb {
+    flex: 0 0 4.125rem;
+    width: 4.125rem;
+    height: 4.125rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center
+  }
+}
 @media (max-width:360px) {
   .header__contact a,
   .header__contact button {
@@ -2996,7 +3007,6 @@ summary::marker {
   }
   .food__lables {
     width: 100%;
-    flex-direction: column;
     align-items: flex-start
   }
   .food__actions {
