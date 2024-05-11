@@ -1349,8 +1349,10 @@ summary::marker {
   border-radius: 1.5625rem
 }
 .options__navigation {
-  display: flex;
-  gap: 2.625rem
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 2.625rem;
+  height: 100%
 }
 .options__navigation:not(:last-child) {
   margin-bottom: 1.25rem
@@ -1363,6 +1365,7 @@ summary::marker {
   border: .125rem solid #262626
 }
 .options__label {
+  height: 100%;
   display: flex;
   padding: 1.5rem;
   flex-direction: column;
@@ -3020,6 +3023,9 @@ summary::marker {
   }
   .options__sub-title:not(:last-child) {
     margin-bottom: 1rem
+  }
+  .options__navigation {
+    padding: 0 1rem
   }
   .call-us__footer > *:not(:last-child) {
     margin-bottom: 2rem
