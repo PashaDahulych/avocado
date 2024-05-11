@@ -3132,6 +3132,9 @@ summary::marker {
   .subscribe__text:not(:last-child) {
     margin-bottom: 1.5rem
   }
+  .subscribe__btn {
+    width: 100%
+  }
   .subscribe__img {
     order: 1
   }
@@ -3171,8 +3174,8 @@ summary::marker {
   .map__wrapper iframe {
     height: 15.625rem
   }
-  .subscribe__btn {
-    width: 100%
+  .subscribe__title:not(:last-child) {
+    font-size: 1.25rem
   }
   .subscribe__img {
     padding-bottom: 28.125rem
