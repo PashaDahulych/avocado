@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240511165012">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240513214112">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -99,12 +99,12 @@
 								</p>
 							</div>
 							<div class="hero__actions">
-								<button type="button" class="hero__button button">
+								<a href="#" class="hero__button button">
 									Замовити харчування
-								</button>
-								<button type="button" class="hero__button button button--white">
+								</a>
+								<a href="#" type="button" class="hero__button button button--white">
 									Переглянути программи
-								</button>
+								</a>
 							</div>
 							<div class="hero__links">
 								<h3>Так само можна замовити тут:</h3>
@@ -119,7 +119,7 @@
 							</div>
 						</div>
 						<div class="hero__gallery">
-							<!--  -->
+
 							<div data-marquee data-marquee-direction="top" data-marquee-speed="200" class="hero__line">
 								<div class="hero__img">
 									<img src="img/hero/image_01.webp" alt="img" />
@@ -143,7 +143,7 @@
 									<img src="img/hero/image_07.webp" alt="img" />
 								</div>
 							</div>
-							<!--  -->
+
 							<div data-marquee data-marquee-direction="bottom" data-marquee-speed="200" class="hero__up-line">
 								<div class="hero__img">
 									<img src="img/hero/image_08.webp" alt="img" />
@@ -167,7 +167,7 @@
 									<img src="img/hero/image_04.webp" alt="img" />
 								</div>
 							</div>
-							<!--  -->
+
 							<div data-marquee data-marquee-direction="top" data-marquee-speed="200" class="hero__line">
 								<div class="hero__img">
 									<img src="img/hero/image_05.webp" alt="img" />
@@ -444,6 +444,130 @@
 					</div>
 				</div>
 			</section>
+			<section class="calculator" id="calculator">
+				<div class="calculatot__container">
+					<div class="calculatot__wrapper">
+						<h2 class="calculatot__title title">
+							Розрахуйте скільки треба вам калорій
+						</h2>
+						<div class="calculatot__text text">
+							<p>
+								Дізнайтеся свою денну норму, виходячи з
+								ваших особливостей та мети Налаштуйте
+								калькулятор з урахуванням своїх даних.
+							</p>
+						</div>
+						<form action="#" method="POST" class="calculatot__form form">
+							<input type="hidden" name="secret" />
+							<div class="form__column">
+								<div class="form__line">
+									<p class="form__label">Стать</p>
+									<div class="form__options options-form">
+										<div class="options-form__item">
+											<input id="o_1" class="options-form__input" checked type="radio" value="1" name="gender" />
+											<label for="o_1" class="options-form__label" class="options-form__label"><span class="options-form__text">Чоловік</span></label>
+										</div>
+										<div class="options-form__item">
+											<input id="o_2" class="options-form__input" type="radio" value="2" name="gender" />
+											<label for="o_2" class="options-form__label"><span class="options-form__text">Жінка</span></label>
+										</div>
+									</div>
+								</div>
+								<div class="form__line">
+									<p class="form__label">Ваш вік</p>
+									<label class="custom-range-slider range">
+										<input type="range" max="200" min="0" value="0" />
+									</label>
+								</div>
+								<div class="form__line">
+									<p class="form__label">Рівень активності
+										<span class="_icon-info"></span>
+									</p>
+									<ul>
+										<li>
+											<i><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M22.75 3.5L5.25 24.5H21L19.25 38.5L36.75 17.5H21L22.75 3.5Z" fill="#89D628" stroke="#89D628" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+												</svg></i>
+										</li>
+										<li>
+											<i><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M22.75 3.5L5.25 24.5H21L19.25 38.5L36.75 17.5H21L22.75 3.5Z" fill="#89D628" stroke="#89D628" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+												</svg></i>
+										</li>
+										<li>
+											<i><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M22.75 3.5L5.25 24.5H21L19.25 38.5L36.75 17.5H21L22.75 3.5Z" fill="#89D628" stroke="#89D628" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+												</svg></i>
+										</li>
+										<li>
+											<i><svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M19.75 1.5L2.25 22.5H18L16.25 36.5L33.75 15.5H18L19.75 1.5Z" stroke="#89D628" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+												</svg></i>
+										</li>
+										<li>
+											<i><svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M19.75 1.5L2.25 22.5H18L16.25 36.5L33.75 15.5H18L19.75 1.5Z" stroke="#89D628" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+												</svg></i>
+										</li>
+									</ul>
+								</div>
+								<div class="form__line">
+									<p class="form__label">Ваша вага</p>
+									<label class="custom-range-slider range">
+										<input type="range" max="200" min="0" value="0" />
+									</label>
+								</div>
+								<div class="form__line">
+									<p class="form__label">Мета</p>
+									<select id="goalCalc" name="form[]" data-class-modif="form">
+										<option value="1" selected>
+											Хочу схуднути
+										</option>
+										<option value="2">
+											не хочу готувати
+										</option>
+										<option value="3">
+											хочу підсушитися
+										</option>
+										<option value="4">
+											набрати масу
+										</option>
+									</select>
+								</div>
+								<div class="form__line">
+									<p class="form__label">Ваш зріст</p>
+									<label class="custom-range-slider range">
+										<input type="range" max="200" min="0" value="0" />
+									</label>
+								</div>
+							</div>
+							<div class="form__result">
+								<p class="form__calories">1849 ккал</p>
+								<h4 class="form__program">
+									Вам підходить програма:
+								</h4>
+								<div class="form__menu">
+									<p>Меню</p>
+									<p>1800 ккал</p>
+								</div>
+								<div class="form__program-img">
+									<img src="img/about/image_01.webp" alt="program picture" />
+								</div>
+								<button type="submit" class="form__button">
+									Переглянути програму
+								</button>
+								<div class="form__bg-small">
+									<img src="img/calculator/bg.svg" alt="background" />
+								</div>
+							</div>
+							<div class="form__bg">
+								<img src="img/calculator/block-bg.webp" alt="background" />
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</section>
 			<section class="food">
 				<div class="food__container">
 					<header class="food__header">
@@ -478,7 +602,8 @@
 										<span class="options__label">
 											<span class="options__title">Хочу схуднути</span>
 											<span class="options__result">-6кг за 3 тижні</span>
-											<span class="options__text">Без стресу та зривіввід 785 кКал</span>
+											<span class="options__text">Без стресу та зривіввід 785
+												кКал</span>
 											<span class="options__btn">Обрати</span>
 										</span>
 									</button>
@@ -495,7 +620,8 @@
 										<span class="options__label">
 											<span class="options__title">Хочу набрати масу</span>
 											<span class="options__result">+3кг за 3 тижні</span>
-											<span class="options__text">На кожен день від 1800 кКал</span>
+											<span class="options__text">На кожен день від 1800
+												кКал</span>
 											<span class="options__btn">Обрати</span>
 										</span>
 									</button>
@@ -503,7 +629,8 @@
 										<span class="options__label">
 											<span class="options__title">Хочу підсушитися</span>
 											<span class="options__result">+20 годин на тиждень</span>
-											<span class="options__text">Без магазинів від 550 кКал</span>
+											<span class="options__text">Без магазинів від 550
+												кКал</span>
 											<span class="options__btn">Обрати</span>
 										</span>
 									</button>
@@ -18439,7 +18566,7 @@
 								</p>
 							</div>
 							<nav data-tabs-titles class="testinations__navigation">
-								<button type="button" class="testinations__btn ">
+								<button type="button" class="testinations__btn">
 									Текстові <span>відгуки</span>
 								</button>
 								<button type="button" class="testinations__btn _tab-active">
@@ -18607,25 +18734,19 @@
 									<div class="testinations__wrapper swiper-wrapper">
 										<!-- Слайд -->
 										<div class="testinations__slide slide-testinations swiper-slide">
-											<div class="slide-testinations__video" data-src='https://www.youtube.com/embed/b8ssbp3IjVc?si=o0t3KdaGwmLQ2Cpc&autoplay=1'>
-											</div>
+											<div class="slide-testinations__video" data-src="https://www.youtube.com/embed/b8ssbp3IjVc?si=o0t3KdaGwmLQ2Cpc&autoplay=1"></div>
 										</div>
 										<!-- Слайд -->
 										<div class="testinations__slide slide-testinations swiper-slide">
-
-
-											<div class="slide-testinations__video" data-src='https://www.youtube.com/embed/b8ssbp3IjVc?si=o0t3KdaGwmLQ2Cpc&autoplay=1'>
-											</div>
+											<div class="slide-testinations__video" data-src="https://www.youtube.com/embed/b8ssbp3IjVc?si=o0t3KdaGwmLQ2Cpc&autoplay=1"></div>
 										</div>
 										<!-- Слайд -->
 										<div class="testinations__slide slide-testinations swiper-slide">
-											<div class="slide-testinations__video" data-src='https://www.youtube.com/embed/b8ssbp3IjVc?si=o0t3KdaGwmLQ2Cpc&autoplay=1'>
-											</div>
+											<div class="slide-testinations__video" data-src="https://www.youtube.com/embed/b8ssbp3IjVc?si=o0t3KdaGwmLQ2Cpc&autoplay=1"></div>
 										</div>
 										<!-- Слайд -->
 										<div class="testinations__slide slide-testinations swiper-slide">
-											<div class="slide-testinations__video" data-src='https://www.youtube.com/embed/b8ssbp3IjVc?si=o0t3KdaGwmLQ2Cpc&autoplay=1'>
-											</div>
+											<div class="slide-testinations__video" data-src="https://www.youtube.com/embed/b8ssbp3IjVc?si=o0t3KdaGwmLQ2Cpc&autoplay=1"></div>
 										</div>
 									</div>
 									<div class="testinations__swiper-pagination swiper-pagination"></div>
@@ -19120,8 +19241,9 @@
 					</div>
 				</div>
 			</section>
-		</main>
 
+
+		</main>
 
 		<footer class="footer">
 			<div class="footer__container">
@@ -19169,8 +19291,9 @@
 		</footer>
 
 	</div>
-	<script src="https://unpkg.com/imask?_v=20240511165012"></script>
-	<script src="js/app.min.js?_v=20240511165012"></script>
+
+	<script src="https://unpkg.com/imask?_v=20240513214112"></script>
+	<script src="js/app.min.js?_v=20240513214112"></script>
 </body>
 
 </html>
